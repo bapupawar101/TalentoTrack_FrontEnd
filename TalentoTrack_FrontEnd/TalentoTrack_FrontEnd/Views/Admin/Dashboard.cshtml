@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = ":: Dashboard";
+    var fullName = User.FindFirst("FullName")?.Value;
+}
+
+<!-- begin breadcrumb -->
+<ol class="breadcrumb pull-right">
+	<li><a href="javascript:;">Dashboard</a></li>
+</ol>
+<!-- end breadcrumb -->
+<!-- begin page-header -->
+<h1 class="page-header">Dashboard <small>Welcome @fullName</small></h1>
+<!-- end page-header -->
